@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Bebas Neue", cursive;
+}
+body {
+  width: 100%;
+  height: 100%;
+  background: #2b2b2b;
+  background: -webkit-linear-gradient(top left, #2b2b2b, #01ff4d);
+  background: -moz-linear-gradient(top left, #2b2b2b, #01ff4d);
+  background: linear-gradient(to bottom right, #2b2b2b, #01ff4d);
+  background-repeat: no-repeat;
+}
+main{
+  width: 100%;
+  height: 100%;
+}
+.title {
+  width: 100%;
+  padding-top: 20px;
+  display: flex;
+  color: #fff;
+  justify-content: center;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.card {
+  margin: 10px;
+  width: 200px;
+  height: 298px;
+  background-color: #f4d400;
+  border-radius: 5px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.posicaoP,
+.nomeJogador,
+.numeroJogador {
+  font-size: 1.9rem;
+  color: #002ec7;
+}
+.posicaoG {
+  font-size: 90px;
+  color: #f9e97f;
+}
+.escudo {
+  height: 56px;
+  position: absolute;
+  right: 10px;
+  top: 12px;
+}
+.posicaoP {
+  transform: rotate(-90deg);
+  position: absolute;
+  top: 40px;
+  left: 0;
+  z-index: 1;
+  line-height: 100%;
+  display: inline-block;
+}
+.posicaoG {
+  transform: rotate(-90deg);
+  position: absolute;
+  top: 100px;
+  right: 10px;
+  z-index: 0;
+  line-height: 100%;
+  display: inline-block;
+  width: 280px;
+  text-align: center;
+}
+.jogador {
+  position: absolute;
+  z-index: 2;
+}
+.nomeJogador {
+  position: absolute;
+  bottom: 5px;
+}
+.numeroJogador {
+  position: absolute;
+  bottom: 45px;
+  right: 16px;
+}
